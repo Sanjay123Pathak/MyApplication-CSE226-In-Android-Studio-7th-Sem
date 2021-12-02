@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".P20NewCourse"
+            android:exported="false" />
+        <activity
+            android:name=".P20RoomDatabase"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".P20MapsAPI"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBNKEJrw-tiuvV9ukGGsTgY9uUBZpOnStw" />
+
+        <activity
+            android:name=".P18MapsLayout"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".P17SQLiteDatabase"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".P17StyleTheme"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".P16OrientationChange"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".P15FloatIngButtonShowArrayList"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".P14FloatingActionBar"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".P13UserIntentBroadCastManifest"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity> <!-- <receiver android:name=".P13UserdefinedMessage"></receiver> -->
+        <activity
+            android:name=".P12BroadcastManifest"
+            android:exported="true" />
+
+        <receiver
+            android:name=".P12BootCompleteStatically"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".P10BroadcastReceiverDynamically"
+            android:exported="true" />
+        <activity
+            android:name=".P9OnBoundServiceSendMessage"
+            android:exported="true" />
+        <activity
+            android:name=".MyServicesActivity"
+            android:exported="true" />
+
+        <service android:name=".P8MusicService" />
+        <service android:name=".P9BoundServiceClass" />
+
+        <activity
+            android:name=".P7DownLoadImageAsyncTask"
+            android:exported="true" />
+        <activity
+            android:name=".P6AsyncTaskProgressBar"
+            android:exported="true" />
+        <activity
+            android:name=".P5MainRecyclerView"
+            android:exported="true" />
+        <activity
+            android:name=".P3CompleteAppAddDeleteRunTime"
+            android:exported="true" />
+        <activity
+            android:name=".ReceiveDetailFromGridView"
+            android:exported="true" />
+        <activity
+            android:name=".CustomGridViewWithImage"
+            android:exported="true" />
+        <activity android:name=".P2MainCustomListViewWithArrayListUsingArrayAdapter" />
+        <activity android:name=".SimpleListView" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
