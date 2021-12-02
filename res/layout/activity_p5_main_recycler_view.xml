@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    tools:context=".P5MainRecyclerView">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    android:background="@drawable/p5_main_background"
+    android:elevation="5dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+   >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rEdit1"
+        android:hint="Enter name "
+        android:inputType="textCapWords"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rEdit2"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:inputType="textCapWords"
+        android:textColorHint="@color/white"
+        android:hint="Enter name "
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background"
+        android:text="Add Element"
+        android:onClick="AddElement"
+
+        android:id="@+id/rBtn1"/>
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/linearLayout">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:layout_marginTop="30dp"
+    android:id="@+id/recyclerView1"
+   tools:listitem="@layout/p5_recycler_view_layout"
+    ></androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

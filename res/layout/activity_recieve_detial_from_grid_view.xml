@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_gravity="center"
+    tools:context=".ReceiveDetailFromGridView">
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:layout_margin="10dp"
+     android:padding="10dp"
+     android:gravity="center"
+     >
+     <ImageView
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:id="@+id/receiveImage"
+         android:src="@drawable/a1"
+         android:scaleType="fitXY"
+         android:layout_marginTop="10dp"
+         ></ImageView>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/receiveText"
+         android:text="Show names"
+         android:gravity="center"
+         android:textStyle="bold"
+         android:textColor="@color/magenta"
+         android:textSize="20sp"
+         ></TextView>
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Go BAck"
+         android:id="@+id/goBack"
+         android:onClick="goBack"
+         android:layout_gravity="center"></Button>
+ </LinearLayout>
+
+
+</LinearLayout>
